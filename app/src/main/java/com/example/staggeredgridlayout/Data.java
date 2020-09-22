@@ -3,20 +3,26 @@ package com.example.staggeredgridlayout;
 import javax.sql.DataSource;
 
 public class Data {
-    Integer imageResources;
+    String reguler,small;
 
-    public Integer getImageResources() {
-        return imageResources;
+    public String getReguler() {
+        return reguler;
     }
 
-    public void setImageResources(Integer imageResources) {
-        this.imageResources = imageResources;
+    public void setReguler(String reguler) {
+        this.reguler = reguler;
     }
 
-    public Data(Integer imageResources) {
-        this.imageResources = imageResources;
+    public String getSmall() {
+        return small;
     }
 
-    public Data(){}
+    public void setSmall(String small) {
+        this.small = small;
+    }
 
+    public Data(String reguler, String small) {
+        this.reguler = reguler;
+        this.small = small;
+    }
 }
